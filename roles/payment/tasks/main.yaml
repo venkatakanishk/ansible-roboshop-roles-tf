@@ -1,0 +1,19 @@
+- name: run app-setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: app-setup.yaml
+- name: install python modules
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: python-setup.yaml
+- name: systemd setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: systemd.yaml
+
+- name: enable and start payment
+  ansible.builtin.service:
+    name: payment
+    enabled: yes
+    state: restarted
+

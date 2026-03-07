@@ -1,0 +1,9 @@
+- name: include vs import role messages
+ #ansible.builtin.import_role:
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: include-import.yaml
+  when: os == "Red Hat"
+  loop:
+  - ramesh
+  - suresh
