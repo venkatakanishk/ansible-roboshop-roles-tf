@@ -1,11 +1,11 @@
 ansible_user: ec2-user
 ansible_password: DevOps321
-MONGODB_HOST: mongodb-"{{ env }}".naniops.online
-REDIS_HOST: redis-"{{ env }}".naniops.online
-USER_HOST: user-"{{ env }}".naniops.online
-CATALOGUE_HOST: catalogue-"{{ env }}".naniops.online
-CART_HOST: cart-"{{ env }}".naniops.online
-MYSQL_HOST: mysql-"{{ env }}".naniops.online
-RABBITMQ_HOST: rabbitmq-"{{ env }}".naniops.online
-PAYMENT_HOST: payment-"{{ env }}".naniops.online
-SHIPPING_HOST: shipping-"{{ env }}".naniops.online
+MONGODB_HOST: mongodb-"{{ environment }}".naniops.online
+REDIS_HOST: redis-"{{ environment }}".naniops.online
+USER_HOST: user-"{{ environment }}".naniops.online
+CATALOGUE_HOST: catalogue-"{{ environment }}".naniops.online
+CART_HOST: cart-"{{ environment }}".naniops.online
+MYSQL_HOST: mysql-"{{ environment }}".naniops.online
+RABBITMQ_HOST: rabbitmq-"{{ environment }}".naniops.online
+PAYMENT_HOST: payment-"{{ environment }}".naniops.online
+SHIPPING_HOST: shipping-"{{ environment }}".naniops.online
